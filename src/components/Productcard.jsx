@@ -1,4 +1,4 @@
-const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5 }) => {
+const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, isDelivery, }) => {
     if (isLoading) {
       return <h1>LOADING...</h1>;
     } else
@@ -13,7 +13,14 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5 })
                 <i className="bx bxs-star filled"></i>
                 <span className="rating-number">{rating}</span>
             </div>
-
+            
+            {isDelivery && (
+                <div className="delivery-info">
+                  <span className="delivery-text">تحویل فوری</span>
+                  <i class='bx bxs-cable-car'></i>
+                </div>
+            )}
+              
   
           {price > 0 && (
             <p className={`product-price ${price > 400 ? "red" : "green"}`}>
