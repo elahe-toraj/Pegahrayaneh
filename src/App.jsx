@@ -20,23 +20,27 @@ function App() {
                 <ProductCard 
                   title="camera model 1"
                   price={200}
-                  image="/images/camera1.webp"
+                  image="/img/img1.webp"
                   isFeatured
+                  rating = {4}
                 />
                 <ProductCard
                   title="camera model 2"
                   price={0}
-                  image="/images/camera2.webp"
+                  image="/img/img2.webp"
+                  rating = {2}
                 />
                 <ProductCard
                   title="camera model 3"
                   price={800}
-                  image="/images/camera3.webp"
+                  image="/img/img3.webp"
+                  rating = {3.5}
                 />
                 <ProductCard
                   title="camera model 4"
                   price={800}
-                  image="/images/camera3.webp"
+                  image="/img/img4.webp"
+                  rating = {5}
                 />
               </div>
             </div>

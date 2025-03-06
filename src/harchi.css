@@ -167,3 +167,22 @@ section{
     border-radius: 5px;
     font-size: 0.8rem;
 }
+/*star*/
+.stars {
+    display: flex;
+    align-items: center;
+    align-self: flex-end; 
+    margin-bottom: 5px; 
+  }
+  
+  .stars .bx {
+    color: gold;
+    font-size: 10px; 
+  }
+  
+  .rating-number {
+    font-size: 15px;
+    color: #333;
+    margin-left: 2px; 
+  }
+  
