@@ -5,7 +5,7 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, i
       return (
         <div className="product-card">
           {isFeatured && <p className="is-featured">تخفیف ویژه</p>}
-          <img src={image} alt="camera" />
+          <img src={image} alt="shop" />
           <h3 className="product-title">{title}</h3>
   
           
