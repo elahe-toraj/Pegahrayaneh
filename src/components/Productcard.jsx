@@ -3,12 +3,14 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading }) => {
       return <h1>LOADING...</h1>;
     } else
       return (
-        <div className="card">
-          {isFeatured && <p style={{ color: "red" }}>SPECIAL OFFER</p>}
+        <div className="product-card">
+          {isFeatured && <p className="is-featured">تخفیف ویژه</p>}
           <img src={image} alt="camera" />
-          <h3>{title}</h3>
+          <h3 className="product-title">{title}</h3>
           {price > 0 && (
-            <p className={price > 400 ? "red" : "green"}>price: {price}$</p>
+            <p className={`product-price ${price > 400 ? "red" : "green"}`}>
+              price: {price}$
+            </p>
           )}
         </div>
       );
