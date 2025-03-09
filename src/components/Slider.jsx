@@ -1,73 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
+import SliderDetails from "./SliderDetails"; 
 
 const Slider = () => {
+    const slides = [
+        {
+            img: "/img/1.png",
+            title: "کیس گیم",
+            type: "گیگیلی",
+            description: "یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟"
+        },
+        {
+            img: "/img/2.png",
+            title: "کیس گیم",
+            type: "گیگیلی",
+            description: "یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟"
+        },
+        {
+            img: "/img/3.png",
+            title: "کیس گیم",
+            type: "گیگیلی",
+            description: "یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟"
+        }
+    ];
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const nextSlide = () => {
+        setActiveIndex((prev) => (prev + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+        setActiveIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
     return (
         <section>
             <div className="slider">
                 <div className="list">
-
-                    <div className="item">
-                        <img src="/img/1.png" alt="اسلاید 1" />
-                        <div className="content">
-                            <div className="title">کیس گیم</div>
-                            <div className="type">گیگیلی</div>
-                            <div className="description">
-                                یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟
-                            </div>
-                            <div className="button">
-                                <button>مشاهده</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="item">
-                        <img src="/img/2.png" alt="اسلاید 2" />
-                        <div className="content">
-                            <div className="title">کیس گیم</div>
-                            <div className="type">گیگیلی</div>
-                            <div className="description">
-                                یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟
-                            </div>
-                            <div className="button">
-                                <button>مشاهده</button>
+                    {slides.map((item, index) => (
+                        <div key={index} className={`item ${index === activeIndex ? "active" : ""}`}>
+                            <img src={item.img} alt={`اسلاید ${index + 1}`} />
+                            <div className="content">
+                                <div className="title">{item.title}</div>
+                                <div className="type">{item.type}</div>
+                                <div className="description">{item.description}</div>
+                                <div className="button">
+                                    <button>مشاهده</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="item">
-                        <img src="/img/3.png" alt="اسلاید 3" />
-                        <div className="content">
-                            <div className="title">کیس گیم</div>
-                            <div className="type">گیگیلی</div>
-                            <div className="description">
-                                یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد ؟
-                            </div>
-                            <div className="button">
-                                <button>مشاهده</button>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
                 <div className="thumbnail">
-                    <div className="item">
-                        <img src="/img/1.png" alt="اسلاید 1" />
-                    </div>
-                    <div className="item">
-                        <img src="/img/2.png" alt="اسلاید 1" />
-                    </div>
-                    <div className="item">
-                        <img src="/img/3.png" alt="اسلاید 1" />
-                    </div>
+                    {slides.map((item, index) => (
+                        <div key={index} className={`item ${index === activeIndex ? "active" : ""}`}>
+                            <img src={item.img} alt={`اسلاید ${index + 1}`} />
+                        </div>
+                    ))}
                 </div>
-                <div className="nextPrevArrows">
-                    <button><i className='bx bx-chevron-right'></i></button>
-                    <button><i className='bx bx-chevron-left'></i></button>
-                </div>
+
+                <SliderControls onNext={nextSlide} onPrev={prevSlide} />
             </div>
         </section>
-
     );
 };
 
