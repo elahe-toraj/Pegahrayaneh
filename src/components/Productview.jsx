@@ -12,7 +12,7 @@ const ProductView= () => {
             <div className="details">
               <div className="row">
                 <ProductCard 
-                  title="camera model 1"
+                  title="لپتاپ"
                   price={200}
                   image="/img/img1.webp"
                   isFeatured
@@ -20,21 +20,21 @@ const ProductView= () => {
                   isDelivery={true} 
                 />
                 <ProductCard
-                  title="camera model 2"
+                  title="گوشی موبایل"
                   price={0}
                   image="/img/img2.webp"
                   rating = {2}
                   isDelivery={false}
                 />
                 <ProductCard
-                  title="camera model 3"
+                  title="گوشی موبایل"
                   price={800}
                   image="/img/img3.webp"
                   rating = {3.5}
                   isDelivery={true}
                 />
                 <ProductCard
-                  title="camera model 4"
+                  title="لپتاپ"
                   price={800}
                   image="/img/img4.webp"
                   rating = {5}
