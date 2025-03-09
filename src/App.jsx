@@ -1,13 +1,13 @@
 import Header from "./components/Header";
-import Slider from "./components/slider";
 import ProductView from "./components/Productview";
+import Slider from "./components/slider";
 import "./harchi.css"
 function App() {
   return (
     <div>
         <Header />
-      <main>
         <Slider />
+      <main>
         <ProductView />
       </main>
     </div>

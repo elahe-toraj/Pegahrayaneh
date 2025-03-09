@@ -8,11 +8,10 @@ const Header = () => {
         <div className="header">
           <a href="/" className="logo">پگاه رایانه</a>
           <nav className="navbar">
-            <a href="/">خانه</a>
+            <a href="/" className="active">خانه</a>
             <a href="/blog">مجله خبری</a>
             <a href="/ads">ارتباط با ما</a>
           </nav> 
-
           <div className="search-box">
             <input type="text" placeholder="سرچ کنید..." />
             <i className="bx bx-search"></i>
