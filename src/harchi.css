@@ -88,6 +88,7 @@ section{
     height: 100%;
     position: relative;
     inset: 0 0 0 0;
+    transition: opacity 1s ease; 
 }
 .slider .list .item img{
     width: 100%;
@@ -137,7 +138,7 @@ section{
     background-color: #00f;
     color: #eee;
 }
-/*thumbnail*/
+/* thumbnail */
 .thumbnail{
     display: flex;
     position: absolute;
@@ -160,7 +161,7 @@ section{
     border-radius: 20px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
-/*nextPrevArrows*/
+/* nextPrevArrows */
 .nextPrevArrows{
     position: absolute;
     top: 80%;
@@ -208,6 +209,7 @@ section{
         opacity: 1;
     }
 }
+
 .slider .list .item:nth-child(1) .content .title {
     animation: showContent 0.5s linear 1 forwards;
     animation-delay: 0.4s;
@@ -228,76 +230,9 @@ section{
     animation-delay: 1s;
 }
 
-/*animaation for next*/
-.slider.right .list .item:nth-child(1) img {
-    width: 150px;
-    height: 220px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    border-radius: 30px;
-    animation: showImage 0.5s linear 1 forwards;
-
-}
-
-.slider .right .thumbnail .item:nth-last-child(1){
-    overflow: hidden;
-    animation: showThumbnail 0.5s linear 1 forwards;
-}
-.slider .left .list .item img{
-    z-index: 100;
-}
-@keyframes showThumbnail {
-    from{
-        width: 0;
-        opacity: 0;
-    }
-}
-.slider.right .thumbnail {
-    animation: effectNext .5s linear 1 forwards;
-}
-
-@keyframes effectNext{
-    from{
-        transform: translateX(150px);
-    }
-}
-/*animaation for prev*/
-.slider.left .list .item:nth-child(2) {
-    z-index: 2;
-}
-.slider.left .list .item:nth-child(2) img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    animation:  outFrame 0.5s linear 1 forwards;
-}
-@keyframes outFrame{
-    to{
-        width: 150px;
-        height: 220px;
-        bottom: 50px;
-        left: 50%;
-        border-radius: 20px;
-    }
-}
-.slider.left .thumbnail .item:nth-child(2){
-    overflow: hidden;
-    opacity: 0;
-    animation: showThumbnail -.5s linear 1 forwards;
-}
-.slider .list .item:nth-child(2) .content .title,
-.slider .list .item:nth-child(2) .content .type,
-.slider .list .item:nth-child(2) .content .description,
-.slider .list .item:nth-child(2) .content .button {
-    animation: contentOut 0.5s 1s linear 1 forwards;
-}
-@keyframes contentOut {
-    to{
-        transform:  translateY(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
+/* Thumbnail transition */
+.thumbnail .item.active img {
+    border: 3px solid #00f;
 }
 
 /*Card*/

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SliderDetails from "./SliderDetails"; 
+import SliderDetails from "./SliderDetails";
 
 const Slider = () => {
     const slides = [
@@ -60,7 +60,7 @@ const Slider = () => {
                     ))}
                 </div>
 
-                <SliderControls onNext={nextSlide} onPrev={prevSlide} />
+                <SliderDetails onNext={nextSlide} onPrev={prevSlide} />
             </div>
         </section>
     );

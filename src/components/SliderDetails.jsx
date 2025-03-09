@@ -1,6 +1,6 @@
 import React from "react";
 
-const  SliderDetails = ({ onNext, onPrev }) => {
+const SliderDetails = ({ onNext, onPrev }) => {
     return (
         <div className="nextPrevArrows">
             <button className="right" onClick={onNext}><i className="bx bx-chevron-right"></i></button>
