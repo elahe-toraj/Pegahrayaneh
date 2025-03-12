@@ -41,8 +41,8 @@ function Quiz() {
     const handleSetTimer = () => {
         setTimer(true);
     };
-
     const progress = (currentQuestionIndex / DATA.length) * 100;
+
 
     return (
         <div>
