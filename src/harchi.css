@@ -229,12 +229,6 @@ section{
     animation: showContent 0.5s linear 1 forwards;
     animation-delay: 1s;
 }
-
-/* Thumbnail transition */
-.thumbnail .item.active img {
-    border: 3px solid #00f;
-}
-
 /*Card*/
 .red {
     color: red;
@@ -242,6 +236,13 @@ section{
 .green {
     color: green;
 }
+
+/* Thumbnail transition */
+.thumbnail .item.active img {
+    border: 3px solid #00f;
+}
+
+
 .header-pro{
     display: flex;
     justify-content: space-between; 

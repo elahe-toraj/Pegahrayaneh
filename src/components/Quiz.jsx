@@ -173,15 +173,15 @@ function Quiz() {
     const [score, setScore] = useState(0);
     const [quizStarted, setQuizStarted] = useState(false);
     const [quizFinished, setQuizFinished] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null); // برای ذخیره گزینه انتخاب شده
-    const [correctOption, setCorrectOption] = useState(null); // برای ذخیره گزینه درست
-    const [isAnswered, setIsAnswered] = useState(false); // برای چک کردن اینکه آیا پاسخ داده شده یا نه
+    const [selectedOption, setSelectedOption] = useState(null);
+    const [correctOption, setCorrectOption] = useState(null);
+    const [isAnswered, setIsAnswered] = useState(false); 
 
     const handleAnswer = (selectedIndex) => {
         const correctIndex = DATA[currentQuestionIndex].correctOption;
-        setSelectedOption(selectedIndex); // ذخیره گزینه انتخاب شده
-        setCorrectOption(correctIndex); // ذخیره گزینه درست
-        setIsAnswered(true); // نشان دادن اینکه پاسخ داده شده است
+        setSelectedOption(selectedIndex); 
+        setCorrectOption(correctIndex); 
+        setIsAnswered(true);
 
         if (selectedIndex === correctIndex) {
             setScore(score + DATA[currentQuestionIndex].points);
@@ -196,7 +196,7 @@ function Quiz() {
             } else {
                 setQuizFinished(true);
             }
-        }, 1200); // تاخیر برای نمایش پاسخ قبل از رفتن به سوال بعد
+        }, 1200);
     };
 
     const handleStartQuiz = () => {
