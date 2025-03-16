@@ -14,7 +14,7 @@ function App() {
         <ProductView />
         <Quiz />
       </main>
-      <Footer /> {/* اطمینان از استفاده از کامپوننت Footer */}
+      <Footer /> 
     </div>
   );
 }
