@@ -12,6 +12,7 @@ import "./harchi.css";
 
 function App() {
   return (
+<<<<<<< HEAD
     <Router>
       <div>
         <Routes>
@@ -36,6 +37,17 @@ function App() {
         </Routes>
       </div>
     </Router>
+=======
+    <div>
+      <Header />
+      <Slider />
+      <main>
+        <ProductView />
+        <Quiz />
+      </main>
+      <Footer /> 
+    </div>
+>>>>>>> ad9496c6cd2e6be3102b20c5cb8cd8b649fcda0c
   );
 }
 
