@@ -31,8 +31,6 @@ function App() {
               </>
             }
           />
-          
-          {/* صفحه وبلاگ خاص */}
           <Route path="/blog/:id" element={<BlogPage />} />
         </Routes>
       </div>
