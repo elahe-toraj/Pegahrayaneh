@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import ProductView from "./components/Productview";
 import Quiz from "./components/Quiz";
 import Slider from "./components/slider";
-import ListBlog from "./components/ListBlog"; // تغییر نام به ListBlog
-import BlogPage from "./components/BlogPage"; // وارد کردن BlogPage
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // وارد کردن Router
+import ListBlog from "./components/ListBlog"; 
+import BlogPage from "./components/BlogPage"; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 import "./harchi.css";
 
@@ -15,7 +15,6 @@ function App() {
     <Router>
       <div>
         <Routes>
-          {/* صفحه اصلی */}
           <Route
             path="/"
             element={
@@ -24,7 +23,7 @@ function App() {
                 <Slider />
                 <main>
                   <ProductView />
-                  <Quiz /> {/* اضافه کردن Quiz */}
+                  <Quiz /> 
                   <ListBlog />
                 </main>
                 <Footer />

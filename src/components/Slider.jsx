@@ -19,7 +19,7 @@ const Slider = () => {
       img: "/img/3.png",
       title: "کیس گیم",
       type: "گیم",
-      description: "یک کیس خوب و عالی برای بازی چه ویژگی هایی دارد؟",
+      description: "",
     },
   ];
 

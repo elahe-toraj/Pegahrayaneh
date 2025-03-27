@@ -5,16 +5,12 @@ const ListBlog = () => {
     return (
         <section>
             <div className="blog-list">
-                {/* گروه‌بندی عنوان وبلاگ‌ها و دکمه مشاهده بیشتر */}
                 <div className="blog-header">
-                    {/* لینک مشاهده بیشتر سمت چپ */}
                     <Link to="/blogs" className="view-more">مشاهده بیشتر</Link>
 
-                    {/* عنوان وبلاگ‌ها سمت راست */}
                     <h2 className="blog-title">وبلاگ‌ها</h2>
                 </div>
 
-                {/* کادرهای وبلاگ */}
                 <div className="blog-box">
                     <Link to="/blog/1">
                         <div className="blog-image">
