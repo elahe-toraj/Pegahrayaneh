@@ -1,14 +1,15 @@
 import React from 'react';
-import Footer from "./components/Footer component/Footer";
 import Header from "./components/Header";
-import ProductView from "./components/Productview";
+import ProductView from "./components/ProductComponent/ProductView"; 
+import Footer from "./components/FooterComponent/Footer"; 
 import Quiz from "./components/Quiz";
-import Slider from "./components/slider";
+import Slider from "./components/Slider";  
 import ListBlog from "./components/ListBlog"; 
 import BlogPage from "./components/BlogPage"; 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
-
+import ServiceSection from './components/ServiceComponent/ServiceSection'; 
 import "./harchi.css";
+
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <>
                 <Header />
                 <Slider />
+                <ServiceSection />
                 <main>
                   <ProductView />
                   <Quiz /> 

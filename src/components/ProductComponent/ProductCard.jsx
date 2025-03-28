@@ -1,3 +1,4 @@
+
 const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, isDelivery, }) => {
     if (isLoading) {
       return <h1>LOADING...</h1>;

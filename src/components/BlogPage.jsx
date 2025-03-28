@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from './Header'; 
-import Footer from './Footer component/Footer'; 
+import Footer from './FooterComponent/Footer'; 
 
 const BlogPage = () => {
   const { id } = useParams(); 

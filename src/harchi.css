@@ -247,14 +247,7 @@ section {
     animation-delay: 1s;
 }
 
-/*Card*/
-.red {
-    color: red;
-}
 
-.green {
-    color: green;
-}
 
 /* Thumbnail transition */
 .thumbnail .item.active img {
@@ -262,133 +255,6 @@ section {
 }
 
 
-.header-pro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.product {
-    background-color: #C7D9DD;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.special {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.menu {
-    margin: 0;
-    font-size: 20px;
-    cursor: pointer;
-    color: #211C84;
-    text-decoration: none;
-}
-
-.details {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0 50px 0 50px;
-    justify-content: space-between;
-}
-
-.product-card {
-    flex: 1;
-    min-width: 250px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    text-align: center;
-    transition: 0.3s;
-    color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.product-title {
-    align-self: flex-start;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.product-price {
-    align-self: flex-end;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: auto;
-}
-
-.is-featured {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-}
-
-/*star*/
-.product-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.stars {
-    display: flex;
-    align-items: center;
-}
-
-.stars .bx {
-    color: gold;
-    font-size: 10px;
-}
-
-.rating-number {
-    font-size: 15px;
-    color: #333;
-    margin-left: 2px;
-}
-
-.delivery-info {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.delivery-text {
-    color: #00f;
-    padding-left: 5px;
-}
-
-.delivery-info i {
-    font-size: 20px;
-    color: #00f;
-}
 
 
 

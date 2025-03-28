@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard from "./Productcard";
-
+import "./Product.css";
+import ProductCard from "./ProductCard"; 
 const ProductView= () => {
     return(
         <section className="Product-card">
@@ -14,7 +14,7 @@ const ProductView= () => {
                 <ProductCard 
                   title="لپتاپ"
                   price={200}
-                  image="/img/img1.webp"
+                  image="../img/img1.webp"
                   isFeatured
                   rating = {4}
                   isDelivery={true} 
@@ -22,21 +22,21 @@ const ProductView= () => {
                 <ProductCard
                   title="گوشی موبایل"
                   price={0}
-                  image="/img/img2.webp"
+                  image="../img/img2.webp"
                   rating = {2}
                   isDelivery={false}
                 />
                 <ProductCard
                   title="گوشی موبایل"
                   price={800}
-                  image="/img/img3.webp"
+                  image="../img/img3.webp"
                   rating = {3.5}
                   isDelivery={true}
                 />
                 <ProductCard
                   title="لپتاپ"
                   price={800}
-                  image="/img/img4.webp"
+                  image="../img/img4.webp"
                   rating = {5}
                   isDelivery={false}
                 />
