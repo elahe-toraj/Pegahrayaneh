@@ -1,11 +1,8 @@
 /*Blog*/
 .blog-container {
     max-width: 1500px;
-    /* حداکثر عرض کانتینر */
     margin: 0 auto;
-    /* وسط‌چین کردن کانتینر */
     padding: 0 20px;
-    /* فاصله از سمت راست و چپ */
 }
 
 .blog-list {
@@ -63,7 +60,6 @@
     margin-bottom: 30px;
 }
 
-/* استایل کلی صفحه وبلاگ */
 .blog-page {
     padding: 20px;
     background-color: #f9f9f9;
@@ -72,7 +68,6 @@
     color: #333;
 }
 
-/* عنوان وبلاگ */
 .blog-page h1 {
     font-size: 2rem;
     color: #211c84;
@@ -80,7 +75,6 @@
     text-align: center;
 }
 
-/* محتوای وبلاگ */
 .blog-page p {
     font-size: 1rem;
     color: #555;
@@ -90,11 +84,8 @@
 
 .blog-box {
     display: flex;
-    /* استفاده از فلکس‌باکس */
     flex-direction: column;
-    /* در حالت پیش‌فرض، محتوا به صورت عمودی قرار گیرد */
     width: 22%;
-    /* عرض کادر */
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -103,32 +94,22 @@
     overflow: hidden;
 }
 
-/* استایل برای لینک‌ها */
 .blog-box a {
     text-decoration: none !important;
-    /* حذف خط زیر با اولویت بالا */
     color: inherit;
-    /* حفظ رنگ متن */
 }
 
 .blog-box a:hover {
     text-decoration: none !important;
-    /* اطمینان از حذف خط زیر در حالت هاور */
 }
 
-/* استایل برای تصاویر */
 .blog-image img {
     width: 100%;
-    /* عرض تصویر برابر با عرض والد */
     height: auto;
-    /* ارتفاع تصویر به صورت خودکار تنظیم شود */
     object-fit: cover;
-    /* برش تصویر برای تناسب */
     border-radius: 8px;
-    /* گوشه‌های گرد */
 }
 
-/* استایل برای دکمه‌ها */
 .blog-page .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -179,7 +160,7 @@
     margin: 10px 15px;
     color: #007bff;
     text-align: center;
-    /* متن‌ها در مرکز قرار بگیرند */
+
 }
 
 .blog-box p {
@@ -187,17 +168,17 @@
     color: #005fc5;
     margin: 0 15px 10px;
     text-align: justify;
-    /* متن‌ها به صورت مرتب نمایش داده شوند */
+
 }
 
 @media (max-width: 768px) {
     .blog-box {
         width: 100%;
-        /* در عرض‌های کوچک، کادرها تمام عرض صفحه را بگیرند */
+
     }
 
     .blog-list {
         flex-direction: column;
-        /* کادرها به صورت عمودی قرار بگیرند */
+
     }
 }
