@@ -1,8 +1,8 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import Header from './Header'; 
-import Footer from './FooterComponent/Footer'; 
-
+import React from "react";
+import { useParams } from "react-router-dom";
+import Header from "../Header"; 
+import Footer from "../FooterComponent/Footer"; 
+import "./Blog.css";
 const BlogPage = () => {
   const { id } = useParams(); 
 

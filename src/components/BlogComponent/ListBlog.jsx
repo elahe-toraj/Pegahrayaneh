@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ListBlog = () => {
     return (
-        <section>
+        <section className="blog-container">
             <div className="blog-list">
                 <div className="blog-header">
                     <Link to="/blogs" className="view-more">مشاهده بیشتر</Link>

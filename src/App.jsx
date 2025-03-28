@@ -4,8 +4,8 @@ import ProductView from "./components/ProductComponent/ProductView";
 import Footer from "./components/FooterComponent/Footer"; 
 import Quiz from "./components/Quiz";
 import Slider from "./components/Slider";  
-import ListBlog from "./components/ListBlog"; 
-import BlogPage from "./components/BlogPage"; 
+import ListBlog from "./components/BlogComponent/ListBlog"; 
+import BlogPage from "./components/BlogComponent/BlogPage";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import ServiceSection from './components/ServiceComponent/ServiceSection'; 
 import "./harchi.css";
@@ -25,8 +25,8 @@ function App() {
                 <ServiceSection />
                 <main>
                   <ProductView />
-                  <Quiz /> 
                   <ListBlog />
+                  <Quiz />   
                 </main>
                 <Footer />
               </>
