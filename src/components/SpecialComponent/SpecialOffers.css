@@ -1,0 +1,61 @@
+.special{
+    margin-bottom: 20px;
+}
+.special-offers {
+    padding: 10px;
+    background-color: #f44336; /* قرمز */
+    margin: 0 30px 0 30px;
+    color: white;
+    border-radius: 8px;
+    text-align: center; /* برای مرکز کردن نوشته‌ها */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .offers {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .offer-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+    padding: 30px;
+    margin: 30px 0 30px 0;
+  }
+  
+  .offer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .offer-card h4 {
+    margin-top: 10px;
+  }
+  
+  .offer-card p {
+    margin-top: 5px;
+    font-size: 0.9rem;  /* کمی کوچک‌تر کردن سایز قیمت */
+    color: #888;
+  }
+  
+  /* تایمر در پایین */
+  .special-timer {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  

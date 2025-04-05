@@ -8,6 +8,7 @@ import ListBlog from "./components/BlogComponent/ListBlog";
 import BlogPage from "./components/BlogComponent/BlogPage";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import ServiceSection from './components/ServiceComponent/ServiceSection'; 
+import SpecialOffers from './components/SpecialComponent/SpecialOffers';
 import "./harchi.css";
 
 
@@ -24,6 +25,7 @@ function App() {
                 <Slider />
                 <ServiceSection />
                 <main>
+                  <SpecialOffers />
                   <ProductView />
                   <ListBlog />
                   <Quiz />   
