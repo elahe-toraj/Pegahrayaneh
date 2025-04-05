@@ -3,11 +3,11 @@
 }
 .special-offers {
     padding: 10px;
-    background-color: #f44336; /* قرمز */
+    background-color: #f44336; 
     margin: 0 30px 0 30px;
     color: white;
     border-radius: 8px;
-    text-align: center; /* برای مرکز کردن نوشته‌ها */
+    text-align: center; 
   }
   
   .header {
@@ -45,11 +45,10 @@
   
   .offer-card p {
     margin-top: 5px;
-    font-size: 0.9rem;  /* کمی کوچک‌تر کردن سایز قیمت */
+    font-size: 0.9rem; 
     color: #888;
   }
   
-  /* تایمر در پایین */
   .special-timer {
     margin-top: 20px;
     padding: 10px;

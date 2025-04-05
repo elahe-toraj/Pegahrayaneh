@@ -15,7 +15,7 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, i
           const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, "0");
           setTimeLeft(`${hours}:${minutes}:${seconds}`);
         } else {
-          setTimeLeft("00:00:00");
+          setTimeLeft("تخفیفات تمام شد");
           clearInterval(timer);
         }
       }, 1000);
@@ -53,7 +53,7 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, i
           </p>
         )}
 
-        {/* نمایش تایمر */}
+        {/* نمایش تایمر یا پیام پایان تخفیف */}
         {endTime && <p className="timer">{timeLeft}</p>}
       </div>
     );

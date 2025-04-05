@@ -19,7 +19,7 @@ const ProductView = () => {
               isFeatured
               rating={4}
               isDelivery={true}
-              endTime="2025-03-30T23:59:59" 
+              endTime="2025-03-30T23:59:59"
             />
             <ProductCard
               title="گوشی موبایل"
@@ -34,7 +34,7 @@ const ProductView = () => {
               image="../img/img3.webp"
               rating={3.5}
               isDelivery={true}
-              endTime="2025-03-29T12:00:00" 
+              endTime="2025-03-29T12:00:00"
             />
             <ProductCard
               title="لپتاپ"
