@@ -29,7 +29,8 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, i
   } else {
     return (
       <div className="product-card">
-        {isFeatured && <p className="is-featured">تخفیف ویژه</p>}
+        {/* اگر تخفیف تمام شده، هیچ متنی نمایش داده نشود */}
+        {isFeatured && timeLeft !== "تخفیفات تمام شد" && <p className="is-featured">تخفیف ویژه</p>}
         <img src={image} alt="shop" />
         <h3 className="product-title">{title}</h3>
 
@@ -54,7 +55,7 @@ const ProductCard = ({ title, image, price, isFeatured, isLoading, rating = 5, i
         )}
 
         {/* نمایش تایمر یا پیام پایان تخفیف */}
-        {endTime && <p className="timer">{timeLeft}</p>}
+        {endTime && timeLeft !== "تخفیفات تمام شد" && <p className="timer">{timeLeft}</p>}
       </div>
     );
   }

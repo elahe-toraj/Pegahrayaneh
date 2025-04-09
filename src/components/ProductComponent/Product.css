@@ -34,16 +34,16 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 0 50px 0 50px;
+    gap: 10px;
+    padding: 0 20px 0 20px;
     justify-content: space-between;
 }
 
 .product-card {
     flex: 1;
-    min-width: 250px;
+   
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;
     text-align: center;
@@ -63,7 +63,6 @@
 
 .product-title {
     align-self: flex-start;
-    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 10px;
 }

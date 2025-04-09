@@ -5,43 +5,49 @@ const SpecialOffers = () => {
   const [offers, setOffers] = useState([
     {
       title: "لپتاپ",
-      price: 200,
+      price: 200000,
       image: "../img/img1.webp",
-      isFeatured: true,
+      rating: 4.5,
+      isDelivery: true,
     },
     {
       title: "گوشی موبایل",
-      price: 0,
+      price: 300000,
       image: "../img/img2.webp",
-      isFeatured: false,
+      rating: 3.2,
+      isDelivery: false,
     },
     {
       title: "گوشی موبایل",
-      price: 800,
+      price: 800000,
       image: "../img/img3.webp",
-      isFeatured: true,
+      rating: 4.8,
+      isDelivery: true,
+    },
+    {
+      title: "لپتاپ",
+      price: 800000,
+      image: "../img/img4.webp",
+      rating: 3.9,
+      isDelivery: true,
+    },
+    {
+      title: "لپتاپ",
+      price: 800000,
+      image: "../img/img4.webp",
+      rating: 4.0,
+      isDelivery: false,
     },
     {
       title: "لپتاپ",
       price: 800,
       image: "../img/img4.webp",
-      isFeatured: false,
-    },
-    {
-      title: "لپتاپ",
-      price: 800,
-      image: "../img/img4.webp",
-      isFeatured: false,
-    },
-    {
-      title: "لپتاپ",
-      price: 800,
-      image: "../img/img4.webp",
-      isFeatured: false,
+      rating: 4.1,
+      isDelivery: false,
     },
   ]);
 
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 دقیقه به ثانیه
+  const [timeLeft, setTimeLeft] = useState(15 * 60);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -68,22 +74,42 @@ const SpecialOffers = () => {
       <div className="special-offers">
         <div className="header">
           <h3>تخفیفات ویژه</h3>
-          {/* تایمر */}
           <div className="special-timer">
             <p>زمان باقی‌مانده: {formatTime(timeLeft)}</p>
           </div>
         </div>
+
         <div className="offers">
           {offers.map((offer, index) => (
-            <div key={index} className="offer-card">
+            <div className="product-card" key={index}>
               <img src={offer.image} alt={offer.title} />
-              <h4>{offer.title}</h4>
-              <p>قیمت: {offer.price} تومان</p>
+              <h3 className="product-title">{offer.title}</h3>
+
+              <div className="product-meta">
+                <div className="stars">
+                  <i className="bx bxs-star filled"></i>
+                  <span className="rating-number">{offer.rating}</span>
+                </div>
+
+                {offer.isDelivery && (
+                  <div className="delivery-info">
+                    <span className="delivery-text">تحویل فوری</span>
+                    <i className="bx bxs-cable-car"></i>
+                  </div>
+                )}
+              </div>
+
+              {offer.price > 0 && (
+                <p
+                  className={`product-price`}
+                >
+                   {offer.price} تومان
+                </p>
+              )}
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 };
