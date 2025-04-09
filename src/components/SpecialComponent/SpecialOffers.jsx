@@ -47,13 +47,16 @@ const SpecialOffers = () => {
     },
   ]);
 
-  const [timeLeft, setTimeLeft] = useState(15 * 60);
+
+  const [timeLeft, setTimeLeft] = useState(1 * 60); 
+  const [isVisible, setIsVisible] = useState(true); 
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
-        if (prevTime <= 0) {
+        if (prevTime <= 1) {
           clearInterval(timer);
+          setIsVisible(false); 
           return 0;
         }
         return prevTime - 1;
@@ -64,10 +67,12 @@ const SpecialOffers = () => {
   }, []);
 
   const formatTime = (time) => {
-    const minutes = String(Math.floor(time / 60)).padStart(2, "0");
-    const seconds = String(time % 60).padStart(2, "0");
+    const minutes = String(Math.floor(time / 60)).padStart(1, "0");
+    const seconds = String(time % 60).padStart(1, "0");
     return `${minutes}:${seconds}`;
   };
+
+  if (!isVisible) return null; 
 
   return (
     <section className="special">
@@ -103,7 +108,7 @@ const SpecialOffers = () => {
                 <p
                   className={`product-price`}
                 >
-                   {offer.price} تومان
+                  {offer.price} تومان
                 </p>
               )}
             </div>
