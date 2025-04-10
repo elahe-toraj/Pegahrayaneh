@@ -2,13 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+
 }
 
 .product {
     background-color: #87CEFA;
     padding: 20px;
     border-radius: 10px;
+    margin: 0 30px 0 30px;
+
 }
 
 .special {
@@ -17,7 +19,7 @@
 }
 
 .menu {
-    margin: 0;
+    margin: 20px;
     font-size: 20px;
     cursor: pointer;
     color: #211C84;
@@ -35,29 +37,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
     justify-content: space-between;
 }
 
 .product-card {
-    flex: 1;
-   
     background-color: white;
-    padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: 0.3s;
     color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    padding: 30px;
+    margin: 30px 0 30px 0;
 }
 
 .product-card img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 

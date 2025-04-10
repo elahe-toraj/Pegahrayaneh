@@ -44,6 +44,13 @@ const ProductView = () => {
               rating={5}
               isDelivery={false}
             />
+            <ProductCard
+              title="لپتاپ"
+              price={800}
+              image="../img/img4.webp"
+              rating={5}
+              isDelivery={false}
+            />
           </div>
         </div>
       </div>
